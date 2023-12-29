@@ -75,14 +75,11 @@ class LinkedList:
         return temp
 
     def set_value(self, index, new_value):
-        if index < 0 or index >= self.length:
-            return None
-
-        temp = self.head
-        for _ in range(index):
-            temp = temp.next
-        temp.value = new_value
-        return True
+        tmp = self.get(index)
+        if tmp:
+            tmp.value = new_value
+            return True
+        return False
 
 
 my_linked_list = LinkedList(11)
