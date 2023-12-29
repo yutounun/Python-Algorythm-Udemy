@@ -122,9 +122,12 @@ class LinkedList:
 
         prev = None
         current = self.head
-        while current:
-            # Reverse an arrow
+        next = current.next
+
+        while next:
             next = current.next
+
+            # Reverse an arrow
             current.next = prev
 
             # Move forward
