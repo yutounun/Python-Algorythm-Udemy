@@ -4,8 +4,8 @@ def item_in_common(l1, l2):
     for val in l1:
         dict[val] = True
 
-    for val in l2:
-        if val in dict:
+    for key in l2:
+        if key in dict:
             return True
     return False
 
