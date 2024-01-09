@@ -72,5 +72,4 @@ print(my_tree.is_valid_bst())
     ----------------
     BST is valid:
     True
-
  """
